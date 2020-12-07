@@ -1,0 +1,36 @@
+body {
+  font-family: "Acme", sans-serif;
+  text-decoration: #0a043c;
+  color-adjust: inherit;
+  font-size: 15px;
+}
+navbar {
+  position: relative;
+  left: 50%;
+  color: #03506f;
+}
+.fancy {
+  text-align: center;
+  margin: 20px auto;
+  position: static;
+  padding: 1em;
+  border: 0.5em solid #0a043c;
+  width: 50em;
+  height: 46em;
+  border: radius 90%;
+  background-color: #f1f6f9;
+  box-shadow: 0px 10px 8px #0a043c;
+}
+
+.button {
+  background: #03506f;
+  padding: 12px 48px;
+  border: inherit;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.daily-container {
+  text-align: center;
+  align-items: space-between;
+}
