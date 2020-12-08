@@ -3,6 +3,7 @@ body {
   text-decoration: #0a043c;
   color-adjust: inherit;
   font-size: 15px;
+  padding: 0;
   max-width: 600px;
   margin: 0 auto;
   border: 0.5em solid #0a043c;
@@ -11,6 +12,9 @@ navbar {
   position: relative;
   left: 50%;
   color: #03506f;
+}
+h1 {
+  line-height: 30px;
 }
 .fancy {
   text-align: center;
