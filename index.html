@@ -18,48 +18,52 @@
     <title>wApp</title>
   </head>
   <body>
-    <div class="fancy">
-      <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
-      </nav>
-      <br />
-      <h1>City</h1>
-      <h2>Weather</h2>
-      <h3>Temperature</h3>
-      <img src="img/icon.png" />
+    <div class="container">
+      <div class="fancy">
+        <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </nav>
+        <br />
+        <h1>City</h1>
+        <h2>Weather</h2>
+        <h3>Temperature</h3>
+        <img src="img/icon.png" alt="partly cloudy" />
+        12
 
-      <div class="container">
-        <div class="row row-cols-2">
-          <div class="col">Wind speed</div>
-          <div class="col">Humidity</div>
-          <div class="col">Dew point</div>
-          <div class="col">Visibility</div>
+        <div class="container">
+          <div class="row row-cols-2">
+            <div class="col">Wind speed</div>
+            <div class="col">Humidity</div>
+            <div class="col">Dew point</div>
+            <div class="col">Visibility</div>
+          </div>
         </div>
-      </div>
-      <br />
-      <br />
-      <div class="container">
-        <div data class="daily-container">
-          <div class="row">
-            <div class="col-next">Next DAY</div>
-            <div class="day-list-values"></div>
-            <div class="col-after">DAY after next day</div>
-            <div class="day-list-values"></div>
-            <div class="row-cols-2">2day after</div>
-            <div class="day-list-values"></div>
+        <br />
+        <br />
+        <div class="container">
+          <div data class="daily-container">
+            <div class="row">
+              <div class="col-next">Next DAY</div>
+              <div class="day-list-values"></div>
+              <div class="col-after">DAY after next day</div>
+              <div class="day-list-values"></div>
+              <div class="row-cols-2">2day after</div>
+              <div class="day-list-values"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
