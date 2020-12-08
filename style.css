@@ -34,3 +34,10 @@ navbar {
   text-align: center;
   align-items: space-between;
 }
+.bottom {
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  color: #0a043c;
+}
