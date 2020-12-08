@@ -36,7 +36,7 @@ h1 {
   align-items: space-between;
 }
 .bottom {
-  text-align: right;
+  text-align: bottom right;
   display: block;
   cursor: pointer;
   color: #03506f;
