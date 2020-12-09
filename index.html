@@ -19,25 +19,24 @@
   </head>
 
   <body>
-
     <div class="container-app">
-          <nav class="navbar navbar-light bg-light">
-              <form class="form-inline">
-                <input
-                class="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                />
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                    Search
-                  </button>
-              </form>
-          </nav>
+      <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </nav>
       <br />
       <h1>City</h1>
       <h2>Weather</h2>
-      <h3>Temperature : <strong>1 </strong> C° / F </h3>
+      <h3>Temperature : <strong>1 </strong> C° / F</h3>
       <img src="img/icon.png" alt="partly cloudy" />
 
       <div class="container">
@@ -52,40 +51,42 @@
       </div>
       <br />
       <br />
-        <div data class="daily-container">
-            <div class="row weather-forecast" id="forecast">
-                  <div class="col-2">
-                    <h4> Next DAY </h4>
-                      <img src="https://openweathermap.org/img/wn/04d@2x.png" class="weather-icon">
-                        <div class="weather-forecast-temperature">
-                          <strong> 1° </strong> 0° 
-                        </div>
+      <div data class="daily-container">
+        <div class="row weather-forecast" id="forecast">
+          <div class="col-2">
+            <h4>Next DAY</h4>
+            <img
+              src="https://openweathermap.org/img/wn/04d@2x.png"
+              class="weather-icon"
+            />
+            <div class="weather-forecast-temperature">
+              <strong> 1° </strong> 0°
+            </div>
+            <div class="day-list-values"></div>
+          </div>
+
+          <div class="row weather-forecast" id="forecast">
+            <div class="col-2">
+              <h4>Next DAY</h4>
+              <img
+                src="https://openweathermap.org/img/wn/04d@2x.png"
+                class="weather-icon"
+              />
+              <div class="weather-forecast-temperature">
+                <strong> 1° </strong> 0°
+              </div>
               <div class="day-list-values"></div>
             </div>
-            <div class="row weather-forecast" id="forecast">
-                  <div class="col-2">
-                    <h4> Next DAY </h4>
-                      <img src="https://openweathermap.org/img/wn/04d@2x.png" class="weather-icon">
-                        <div class="weather-forecast-temperature">
-                          <strong> 1° </strong> 0° 
-                        </div>
-              <div class="day-list-values"></div>
-            </div>
-            <div class="row weather-forecast" id="forecast">
-                  <div class="col-2">
-                    <h4> Next DAY </h4>
-                      <img src="https://openweathermap.org/img/wn/04d@2x.png" class="weather-icon">
-                        <div class="weather-forecast-temperature">
-                          <strong> 1° </strong> 0° 
-                        </div>
-              <div class="day-list-values"></div>
-            </div>
-          <hr />
-          <small>
-            <a href="https://github.com/JuKad/vanilla-weather-app" class="bottom">
+          </div>
+        </div>
+        <hr />
+        <small>
+          <a href="https://github.com/JuKad/vanilla-weather-app" class="bottom">
             Open-source code by Juliana Kadlecova
-            </a>
-          </small>
-      <script src="script.js"></script>
+          </a>
+        </small>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
