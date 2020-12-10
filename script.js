@@ -19,9 +19,8 @@ function formatDate(date) {
     "Saturday"
   ];
   let day = days[dayIndex];
-  let h1=document.querySelector("h1");
-  h1.innerHTML= `${day} ${hours}:${minutes}`;
-
+  let currentDate =document.querySelector("#current-date");
+    currentDate.innerHTML= `${day} ${hours}:${minutes}`;
 }
 
 
