@@ -30,7 +30,9 @@ h1 {
   outline: none;
   border-radius: 3px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 .daily-container {
   text-align: center;
   align-items: space-between;
@@ -40,6 +42,7 @@ h1 {
   display: block;
   cursor: pointer;
   color: #03506f;
+  transition: all 0.3s ease;
 }
 .forecast {
   display: inline block;
