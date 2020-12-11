@@ -2,11 +2,11 @@ body {
   font-family: "Acme", sans-serif;
   text-decoration: #0a043c;
   color-adjust: inherit;
-  font-size: 30px;
   padding: 0;
-  max-width: 700px;
+  line-height: 25px;
+  max-width: 600px;
   margin: 0 auto;
-  border: 0.5em solid #0a043c;
+  border: 0.3em solid #0a043c;
 }
 navbar {
   position: relative;
@@ -16,9 +16,10 @@ navbar {
 h1 {
   line-height: 30px;
 }
+.date {
+}
 .container-app {
   text-align: center;
-  padding: 0;
   background-color: #f1f6f9;
   box-shadow: 0px 10px 8px #0a043c;
 }
@@ -27,9 +28,13 @@ li {
   font-size: 25px;
   text-transform: capitalize;
 }
+li:first-letter {
+  text-transform: capitalize;
+}
 
 .button {
   background: #03506f;
+  font-size: 10px;
   padding: 12px 48px;
   border: inherit;
   outline: none;
