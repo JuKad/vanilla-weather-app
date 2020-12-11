@@ -22,7 +22,7 @@
   <body>
     <div class="container-app">
       <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
+        <form class="form-inline" id="form">
           <input
             class="form-control mr-sm-2"
             type="search-form"
@@ -38,36 +38,34 @@
       <br />
       <h1 id="city"></h1>
       <ul>
-        <li>Updated : <span id="date"> </span></li>
+        <li class="li-updated">
+          Updated :
+          <span id="date"> </span>
+        </li>
         <li>
+          Temperature :
           <span id="temperature"> °C </span>
         </li>
         <li id="description"></li>
       </ul>
       <img src="" alt="partly cloudy" id="icon" />
-
       <div class="container">
         <div class="row">
-          <div class="col-6">
-            <div class="clearfix weather-temperature">
-              <ul>
-                <li>
-                  Wind speed :
-                  <span id="wind"></span> Km/H
-                </li>
-                <li>
-                  Humidity:
-                  <span id="humidity"></span> %
-                </li>
-                <li>
-                  Feels like:
-                  <span id="feelsLike"></span> C°
-                </li>
-                <li>
-                  Visibility:
-                  <span id="visibility"> </span>
-                </li>
-              </ul>
+          <div class="col">
+            <div>Wind speed : <span id="wind"></span> Km/H</div>
+            <div>
+              Humidity:
+              <span id="humidity"></span> %
+            </div>
+          </div>
+          <div class="col">
+            <div>
+              Feels like:
+              <span id="feelsLike"></span> C°
+            </div>
+            <div>
+              Visibility:
+              <span id="visibility"> </span>
             </div>
           </div>
         </div>
