@@ -42,11 +42,11 @@ visibilityElement.innerHTML = response.data.wind.speed;
 humidityElement.innerHTML = response.data.main.humidity;
 feelsElement.innerHTML = Math.round(response.data.main.feels_like);
 dateElement.innerHTML = formatDate(response.data.dt * 1000);
-iconElement.innerHTML = "https://openweathermap."
+iconElement.setAttribute ("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 let apiKey = "63c0356d5ea58f413b8af4b34fb11290";
-let city = "";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
+let city = "Moscow";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(showTemperature);
