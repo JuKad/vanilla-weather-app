@@ -16,7 +16,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <title>☁ wApp ☁</title>
+    <title>☁ wApp 🌨</title>
   </head>
 
   <body>
@@ -35,24 +35,38 @@
         </form>
       </nav>
       <br />
-      <h1 class="current-city"></h1>
-      <li class="current-date"></li>
-      <h2 class="current-weather"></h2>
-      <h3 class="weather-temperature-celsius">
-        <strong> -1 </strong>
-        C° /
-        <li class="weather-temperature-farenheit"></li>
-        F
-      </h3>
+      <h1 id="city"></h1>
+      <h2 class="current-date"></h2>
+      <li id="description">
+        <strong id="temperature"> </strong>
+        <span class="units">
+          C° /
+          <a href="#"> ° F </a>
+        </span>
+      </li>
       <img src="img/icon.png" alt="partly cloudy" />
 
       <div class="container">
-        <div class="clearfix">
-          <div class="row row-cols-2">
-            <div class="col-wind">Wind speed</div>
-            <div class="col-hum">Humidity</div>
-            <div class="col-dew">Dew point</div>
-            <div class="col-vis">Visibility</div>
+        <div class="row">
+          <div class="row">
+            <ul>
+              <li>
+                Wind speed :
+                <span id="wind"></span> Km/H
+              </li>
+              <li>
+                Humidity:
+                <span id="humidity"></span> %
+              </li>
+              <li>
+                Feels like:
+                <span id="feelsLike"></span> C°
+              </li>
+              <li>
+                Visibility:
+                <span id="visibility"> </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
