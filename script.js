@@ -22,9 +22,7 @@ return`${day} ${hours}:${minutes} `;
 }
 
 
-
 function showTemperature(response){
-console.log(response.data);
 let temperatureElement = document.querySelector("#temperature");
 let cityElement = document.querySelector("#city");
 let description = document.querySelector("#description");
@@ -33,6 +31,9 @@ let visibilityElement = document.querySelector("#visibility");
 let humidityElement = document.querySelector("#humidity");
 let feelsElement = document.querySelector("#feelsLike");
 let dateElement = document.querySelector("#date");
+let iconElement = document.querySelector("#icon");
+
+
 temperatureElement.innerHTML = Math.round(response.data.main.temp);
 cityElement.innerHTML = response.data.name;
 description.innerHTML = response.data.weather[0].description;
@@ -41,9 +42,11 @@ visibilityElement.innerHTML = response.data.wind.speed;
 humidityElement.innerHTML = response.data.main.humidity;
 feelsElement.innerHTML = Math.round(response.data.main.feels_like);
 dateElement.innerHTML = formatDate(response.data.dt * 1000);
+iconElement.innerHTML = "https://openweathermap."
 }
 
 let apiKey = "63c0356d5ea58f413b8af4b34fb11290";
+let city = "";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(showTemperature);
