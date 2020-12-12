@@ -44,7 +44,11 @@
         </li>
         <li>
           Temperature :
-          <span id="temperature"> °C </span>
+          <span id="temperature"> <strong> </strong> </span>
+          <span class="units">
+            <a href="#" id="celsius-link"> °C </a> |
+            <a href="#" id="fahrenheit-link"> °F </a>
+          </span>
         </li>
         <li id="description"></li>
       </ul>
@@ -75,38 +79,73 @@
       <div data class="daily-container">
         <div class="row weather-forecast" id="forecast">
           <div class="col-2">
-            <h4 class="forecast-next">Next DAY</h4>
+            <h3>Sun</h3>
             <img
-              src="https://openweathermap.org/img/wn/04d@2x.png"
-              class="weather-icon"
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
             />
             <div class="weather-forecast-temperature">
-              <strong> 1° </strong> 0°
+              <strong>22°</strong> 17°
             </div>
-            <div class="day-list-values"></div>
           </div>
-
-          <div class="row weather-forecast" id="forecast">
-            <div class="col-2">
-              <h4>Next DAY</h4>
-              <img
-                src="https://openweathermap.org/img/wn/04d@2x.png"
-                class="weather-icon"
-              />
-              <div class="weather-forecast-temperature">
-                <strong> 1° </strong> 0°
-              </div>
-              <div class="day-list-values"></div>
+          <div class="col-2">
+            <h3>Mon</h3>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
+            />
+            <div class="weather-forecast-temperature">
+              <strong>22°</strong> 17°
+            </div>
+          </div>
+          <div class="col-2">
+            <h3>Tue</h3>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
+            />
+            <div class="weather-forecast-temperature">
+              <strong>22°</strong> 17°
+            </div>
+          </div>
+          <div class="col-2">
+            <h3>Wed</h3>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
+            />
+            <div class="weather-forecast-temperature">
+              <strong>22°</strong> 17°
+            </div>
+          </div>
+          <div class="col-2">
+            <h3>Thu</h3>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
+            />
+            <div class="weather-forecast-temperature">
+              <strong>22°</strong> 17°
+            </div>
+          </div>
+          <div class="col-2">
+            <h3>Fri</h3>
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
+            />
+            <div class="weather-forecast-temperature">
+              <strong>22°</strong> 17°
             </div>
           </div>
         </div>
-        <hr />
-        <small>
-          <a href="https://github.com/JuKad/vanilla-weather-app" class="bottom">
-            Open-source code by Juliana Kadlecova
-          </a>
-        </small>
       </div>
+      <hr />
+      <small>
+        <a href="https://github.com/JuKad/vanilla-weather-app" class="bottom">
+          Open-source code by Juliana Kadlecova
+        </a>
+      </small>
     </div>
     <script src="script.js"></script>
   </body>
