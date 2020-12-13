@@ -1,7 +1,6 @@
 body {
   font-family: "Acme", sans-serif;
   text-decoration: #0a043c;
-  color-adjust: inherit;
   padding: 0;
   line-height: 25px;
   max-width: 700px;
@@ -48,10 +47,6 @@ li:first-letter {
   transition: all 0.3s ease;
 }
 
-.daily-container {
-  text-align: center;
-  align-items: space-between;
-}
 .bottom {
   text-align: bottom right;
   display: block;

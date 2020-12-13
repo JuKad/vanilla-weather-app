@@ -45,12 +45,6 @@ dateElement.innerHTML = formatDate(response.data.dt * 1000);
 iconElement.setAttribute ("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
-function displayForecast(response){
-  console.log(response.data.list[0]);
-  let forecastElement = document.querySelector("#forecast");
-
-  forecastElement.innerHTML = ` `;
-}
 
 function search(city){
 let apiKey = "63c0356d5ea58f413b8af4b34fb11290";
@@ -69,6 +63,9 @@ function handleSubmit(event){
   search(cityInputElement.value);
 }
 
+function displayForecast(response) {
+  let forecastElement = document.querySelector("#forecast");
+}
 
 function displayFarenheitTemperature(event){
   event.preventDefault();
@@ -82,16 +79,17 @@ function displayCelsiusTemperature(event){
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+let celsiusTemperature = null;
+
+search("Poprad");
 
 let form = document.querySelector("#form");
 form.addEventListener("submit", handleSubmit);
 
-let celsiusTemperature = null;
-
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFarenheitTemperature);
+let farenheitLink = document.querySelector("#farenheit-link");
+farenheitLink.addEventListener("click", displayFarenheitTemperature);
 
-search("Poprad");
+
