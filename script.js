@@ -32,8 +32,9 @@ let feelsElement = document.querySelector("#feelsLike");
 let dateElement = document.querySelector("#date");
 let iconElement = document.querySelector("#icon");
 
+celsiusTemperature = response.data.main.temp;
 
-temperatureElement.innerHTML = Math.round(response.data.main.temp);
+temperatureElement.innerHTML = Math.round(celsiusTemperature);
 cityElement.innerHTML = response.data.name;
 description.innerHTML = response.data.weather[0].description;
 windElement.innerHTML = Math.round(response.data.wind.speed);
@@ -68,7 +69,6 @@ function handleSubmit(event){
   search(cityInputElement.value);
 }
 
-search("Bratislava");
 
 function displayFarenheitTemperature(event){
   event.preventDefault();
@@ -86,10 +86,12 @@ function displayCelsiusTemperature(event){
 let form = document.querySelector("#form");
 form.addEventListener("submit", handleSubmit);
 
+let celsiusTemperature = null;
+
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-let celsiusTemperature = null;
-
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+fahrenheitLink.addEventListener("click", displayFarenheitTemperature);
+
+search("Poprad");
