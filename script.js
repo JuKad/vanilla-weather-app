@@ -67,11 +67,11 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 }
 
-function displayFarenheitTemperature(event){
+function displayFahrenheitTemperature(event){
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let farenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(farenheitTemperature);
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function displayCelsiusTemperature(event){
@@ -81,7 +81,6 @@ function displayCelsiusTemperature(event){
 }
 let celsiusTemperature = null;
 
-search("Poprad");
 
 let form = document.querySelector("#form");
 form.addEventListener("submit", handleSubmit);
@@ -89,7 +88,8 @@ form.addEventListener("submit", handleSubmit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-let farenheitLink = document.querySelector("#farenheit-link");
-farenheitLink.addEventListener("click", displayFarenheitTemperature);
+let fahrenheitLink = document.querySelector("#farenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 
+search("Poprad");
